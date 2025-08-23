@@ -1,21 +1,21 @@
-import Home from "@/components/ClientComponents/Home";
+import Skills from "@/components/ClientComponents/Skills";
 import type { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://codewithaqib.com";
-  const currentPath = "/";
+  const currentPath = "/skills";
   const fullUrl = `${baseUrl}${currentPath}`;
 
   return {
-    title: "CodeWithAqib - Your Coding Mentor",
+    title: "Skills & Tech Stack – CodeWithAqib",
     description:
-      "I’m a passionate and results-driven web developer with extensive experience in crafting dynamic, user-friendly and responsive websites.",
+      "Explore my full-stack skills and tech stack—React, Next.js, Node.js, Laravel, MySQL, Tailwind CSS, and TypeScript—used to build fast, scalable products.",
     keywords: ["CodeWithAqib", "solutions", "Web Developer", "Frontend Developer", "Backend Developer", "Full Stack Developer", "Php Developer", "Laravel Developer", "Next js Developer", "React js Developer", "Node js Developer", "Most Famous web Developer",
     ],
     openGraph: {
-      title: "CodeWithAqib - Your Coding Mentor",
+      title: "Skills & Tech Stack – CodeWithAqib",
       description:
-        "I’m a passionate and results-driven web developer with extensive experience in crafting dynamic, user-friendly and responsive websites.",
+        "Explore my full-stack skills and tech stack—React, Next.js, Node.js, Laravel, MySQL, Tailwind CSS, and TypeScript—used to build fast, scalable products.",
       url: fullUrl,
       type: "website",
       siteName: "CodeWithAqib",
@@ -27,9 +27,9 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: "CodeWithAqib - Your Coding Mentor",
+      title: "Skills & Tech Stack – CodeWithAqib",
       description:
-        "I’m a passionate and results-driven web developer with extensive experience in crafting dynamic, user-friendly and responsive websites.",
+        "Explore my full-stack skills and tech stack—React, Next.js, Node.js, Laravel, MySQL, Tailwind CSS, and TypeScript—used to build fast, scalable products.",
       images: `${baseUrl}/faviconlogo.png`,
     },
     alternates: {
@@ -39,5 +39,5 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function Page() {
-  return <Home />;
+  return <Skills />;
 }
