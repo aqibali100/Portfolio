@@ -65,57 +65,117 @@ const ProjectDetail = () => {
     },
     'static-qr-code': {
       title: 'Static QR Code',
-      subtitle: 'A tools website for online text editing and formatting, built with Laravel and Php. You can edit and format text online.',
-      description: 'A comprehensive e-commerce solution built with the MERN stack, featuring user authentication, product management, shopping cart functionality, payment processing with Stripe, order tracking, and a powerful admin dashboard for inventory management.',
-      longDescription: `This e-commerce platform represents a complete online shopping solution designed to handle everything from product browsing to order fulfillment. Built with scalability in mind, the platform can handle thousands of concurrent users and processes hundreds of orders daily.
+      subtitle: 'A static QR code generator built with Laravel and Php. You can generate QR codes for various purposes.',
+      description: 'Static‑QR‑Code offers a suite of entirely free, no‑sign‑up‑required tools for generating static QR codes—codes that embed your data directly without the ability to edit or expire. Each tool supports PNG and SVG downloads, customization (colors, logos, shapes), and instant use.',
+      longDescription: `Static-QR-Code provides a full range of intuitive, browser-based tools for generating static QR codes—no sign-up, no fees, no expiration. Whether you need to share plain text, a URL, contact details, business card info, menus, PDFs, images, Wi-Fi credentials, or even a Facebook profile, there's a dedicated generator built just for that. Each tool offers styling flexibility—like colors, logos, module shapes—and supports high-quality PNG or scalable SVG output. Plus, you can decode existing QR codes with the Scan tool. Everything is designed for immediate use, ideal for educators, businesses, events, restaurants, and professionals looking for efficient, privacy-focused solutions for connecting offline materials to digital content.
 
-The frontend provides an intuitive shopping experience with advanced filtering, product recommendations, and a streamlined checkout process. The backend features robust APIs for product management, user authentication, and order processing, while the admin dashboard offers comprehensive tools for inventory management, sales analytics, and customer support.
+      This tool converts plain text (up to about 300 characters) into static QR codes instantly. It supports bulk generation—so if you have 10, 100, or even 1,000 lines of text, it can produce a separate QR for each. You customize colors, logo placement, code size, and download options, choosing between PNG and SVG formats—ideal for both digital and print use. The codes never expire and are generated without signing up.
 
-Key technical achievements include implementing real-time inventory updates, optimizing database queries for fast product searches, and creating a responsive design that works seamlessly across all devices.`,
-      image: '/images/OnlineTextTools.jpeg',
+      Share Wi‑Fi access effortlessly without revealing your password. Just input your network's SSID, select the encryption type (WPA/WPA2/WPA3, WEP, or none), and generate a scannable QR code. Customize its appearance (colors, shapes, logo) and download in PNG or SVG. The resulting code works on both iOS and Android, remains valid indefinitely (until you change the password), and requires no account.
+      
+      Create a digital business card by embedding your contact details—name, phone number, email, address, and more—into a QR code. Personalize your code with colors and logos, preview it live, and download in high-resolution PNG or SVG. It’s a sleek, professional tool that works across smartphones and doesn’t require registration.
+      
+      Provide a scannable QR that either takes users to a map with a specified address or allows them to select a location on a map interface. Great for event organizers, real estate agents, or anyone needing easy wayfinding. You can style the code, and download it in PNG or SVG formats.
+      
+      Ideal for instantly starting a WhatsApp conversation: encode a number and even a default message into a QR. Upon scanning, the chat window opens immediately—no manual input needed. Customize design elements like logo, color, and shape. This tool remains free, static, and easy to use.
+      
+      All tools are 100% free, require no registrations, and generate truly static QR codes—that store embedded data directly in the image. These codes do not expire, do not track user behavior, and can’t be edited once created. You also get basic but powerful customization and both PNG and SVG download options, making them print-ready and ideal for long-term use.`,
+      image: '/images/static-qr-code.jpeg',
       gallery: [
-        'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop',
-        'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop',
-        'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop',
-        'https://images.pexels.com/photos/3184293/pexels-photo-3184293.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop'
+        '/images/static-qr-code1.jpeg',
+        '/images/static-qr-code2.jpeg',
+        '/images/static-qr-code3.jpeg',
+        '/images/static-qr-code4.jpeg',
       ],
       technologies: ['Laravel', 'MySQL', 'Php', 'Html', 'CSS', 'JavaScript'],
       category: 'Laravel',
       stack: 'Laravel',
-      liveUrl: 'https://onlinetexttools.net/',
+      liveUrl: 'https://static-qr-code.com/',
       duration: '3 months',
       teamSize: '3 developers',
       status: 'Live',
       year: '2025',
       features: [
-        'User Authentication & Authorization',
-        'Product Catalog with Advanced Search',
-        'Shopping Cart & Wishlist',
-        'Secure Payment Processing (Stripe)',
-        'Order Tracking & History',
-        'Admin Dashboard',
-        'Inventory Management',
-        'Sales Analytics',
-        'Email Notifications',
-        'Responsive Design',
-        'SEO Optimization',
-        'Performance Optimization'
+        'You can create unlimited QR codes without creating an account or paying any fees.',
+        'Supports URLs, text, Wi-Fi, vCard/contact info, coupons, images, audio, and more.',
+        'The data is embedded directly into the code, so it never expires and doesn’t rely on servers.',
+        'No tracking or analytics; everything is generated locally in your browser.',
+        'Change colors, add logos, frames, and shapes, and download in PNG or scalable SVG format.',
+        'Can generate many codes at once, and codes work without any internet connection once created.',
       ],
       challenges: [
         {
-          title: 'Real-time Inventory Management',
-          description: 'Implemented real-time inventory updates to prevent overselling and maintain accurate stock levels across multiple concurrent users.',
-          solution: 'Used MongoDB transactions and Redis caching to ensure data consistency and fast inventory checks.'
+          title: 'Handling Multiple QR Code Types',
+          description: 'Providing support for various QR code formats like text, URLs, Wi-Fi, vCards, images, and audio while keeping the generation process simple and error-free.',
+          solution: 'Built modular generators using optimized JavaScript libraries and ensured consistent encoding standards for each content type.'
         },
         {
-          title: 'Payment Security',
-          description: 'Ensuring secure payment processing while maintaining a smooth user experience.',
-          solution: 'Integrated Stripe with proper error handling, webhook validation, and PCI compliance measures.'
+          title: 'Ensuring Privacy and Security',
+          description: 'Users expect QR codes to be generated privately without storing data on servers or tracking activity.',
+          solution: 'All generation is processed locally in the browser, with no data collection, tracking, or server-side storage, ensuring complete privacy.'
         },
         {
-          title: 'Performance Optimization',
-          description: 'Handling large product catalogs and maintaining fast search and filtering capabilities.',
-          solution: 'Implemented database indexing, query optimization, and client-side caching strategies.'
+          title: 'Performance and Scalability',
+          description: 'Managing fast QR generation, customization, and bulk creation while maintaining responsiveness and reliability.',
+          solution: 'Utilized lightweight code libraries, client-side rendering, SVG generation for scalability, and efficient caching mechanisms for bulk operations.'
+        }
+      ],
+    },
+    'easyconvertkit': {
+      title: 'EasyConvertKit',
+      subtitle: 'A website for online converting files, built with Laravel and Php. You can convert files online like pdf to doc, doc to pdf, etc.',
+      description: 'Static‑QR‑Code offers a suite of entirely free, no‑sign‑up‑required tools for generating static QR codes—codes that embed your data directly without the ability to edit or expire. Each tool supports PNG and SVG downloads, customization (colors, logos, shapes), and instant use.',
+      longDescription: `Static-QR-Code provides a full range of intuitive, browser-based tools for generating static QR codes—no sign-up, no fees, no expiration. Whether you need to share plain text, a URL, contact details, business card info, menus, PDFs, images, Wi-Fi credentials, or even a Facebook profile, there's a dedicated generator built just for that. Each tool offers styling flexibility—like colors, logos, module shapes—and supports high-quality PNG or scalable SVG output. Plus, you can decode existing QR codes with the Scan tool. Everything is designed for immediate use, ideal for educators, businesses, events, restaurants, and professionals looking for efficient, privacy-focused solutions for connecting offline materials to digital content.
+
+      This tool converts plain text (up to about 300 characters) into static QR codes instantly. It supports bulk generation—so if you have 10, 100, or even 1,000 lines of text, it can produce a separate QR for each. You customize colors, logo placement, code size, and download options, choosing between PNG and SVG formats—ideal for both digital and print use. The codes never expire and are generated without signing up.
+
+      Share Wi‑Fi access effortlessly without revealing your password. Just input your network's SSID, select the encryption type (WPA/WPA2/WPA3, WEP, or none), and generate a scannable QR code. Customize its appearance (colors, shapes, logo) and download in PNG or SVG. The resulting code works on both iOS and Android, remains valid indefinitely (until you change the password), and requires no account.
+      
+      Create a digital business card by embedding your contact details—name, phone number, email, address, and more—into a QR code. Personalize your code with colors and logos, preview it live, and download in high-resolution PNG or SVG. It’s a sleek, professional tool that works across smartphones and doesn’t require registration.
+      
+      Provide a scannable QR that either takes users to a map with a specified address or allows them to select a location on a map interface. Great for event organizers, real estate agents, or anyone needing easy wayfinding. You can style the code, and download it in PNG or SVG formats.
+      
+      Ideal for instantly starting a WhatsApp conversation: encode a number and even a default message into a QR. Upon scanning, the chat window opens immediately—no manual input needed. Customize design elements like logo, color, and shape. This tool remains free, static, and easy to use.
+      
+      All tools are 100% free, require no registrations, and generate truly static QR codes—that store embedded data directly in the image. These codes do not expire, do not track user behavior, and can’t be edited once created. You also get basic but powerful customization and both PNG and SVG download options, making them print-ready and ideal for long-term use.`,
+      image: '/images/easyconvertkit.jpeg',
+      gallery: [
+        '/images/easyconvertkit1.jpeg',
+        '/images/easyconvertkit2.jpeg',
+        '/images/easyconvertkit3.jpeg',
+        '/images/easyconvertkit4.jpeg',
+      ],
+      technologies: ['Laravel', 'MySQL', 'Php', 'Html', 'CSS', 'JavaScript'],
+      category: 'Laravel',
+      stack: 'Laravel',
+      liveUrl: 'https://easyconvertkit.com/',
+      duration: '3 months',
+      teamSize: '3 developers',
+      status: 'Live',
+      year: '2025',
+      features: [
+        'You can create unlimited QR codes without creating an account or paying any fees.',
+        'Supports URLs, text, Wi-Fi, vCard/contact info, coupons, images, audio, and more.',
+        'The data is embedded directly into the code, so it never expires and doesn’t rely on servers.',
+        'No tracking or analytics; everything is generated locally in your browser.',
+        'Change colors, add logos, frames, and shapes, and download in PNG or scalable SVG format.',
+        'Can generate many codes at once, and codes work without any internet connection once created.',
+      ],
+      challenges: [
+        {
+          title: 'Handling Multiple QR Code Types',
+          description: 'Providing support for various QR code formats like text, URLs, Wi-Fi, vCards, images, and audio while keeping the generation process simple and error-free.',
+          solution: 'Built modular generators using optimized JavaScript libraries and ensured consistent encoding standards for each content type.'
+        },
+        {
+          title: 'Ensuring Privacy and Security',
+          description: 'Users expect QR codes to be generated privately without storing data on servers or tracking activity.',
+          solution: 'All generation is processed locally in the browser, with no data collection, tracking, or server-side storage, ensuring complete privacy.'
+        },
+        {
+          title: 'Performance and Scalability',
+          description: 'Managing fast QR generation, customization, and bulk creation while maintaining responsiveness and reliability.',
+          solution: 'Utilized lightweight code libraries, client-side rendering, SVG generation for scalability, and efficient caching mechanisms for bulk operations.'
         }
       ],
     },
