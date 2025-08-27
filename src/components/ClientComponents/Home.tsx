@@ -42,31 +42,31 @@ const technologies = [
 
 const projects = [
     {
-        title: 'E-Commerce Platform',
-        description: 'A full-featured e-commerce platform with payment integration, inventory management, and admin dashboard.',
-        image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-        technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-        liveUrl: '#',
-        githubUrl: '#',
-        category: 'Web Development'
+        id: 'online-text-tools',
+        title: 'OnlineTextTools',
+        description: 'A tools website for online text editing and formatting, built with Laravel and Php. You can edit and format text online.',
+        image: '/images/OnlineTextTools.jpeg',
+        technologies: ['Laravel', 'MySQL', 'Php', 'Html', 'CSS', 'JavaScript'],
+        liveUrl: 'https://onlinetexttools.net/',
+        category: 'Laravel'
     },
     {
-        title: 'Task Management App',
-        description: 'A collaborative task management application with real-time updates, team collaboration, and progress tracking.',
-        image: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-        technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Socket.io'],
-        liveUrl: '#',
-        githubUrl: '#',
-        category: 'SaaS Application'
+        id: 'static-qr-code',
+        title: 'Static QR Code',
+        description: 'A static QR code generator built with Laravel and Php. You can generate QR codes for various purposes.',
+        image: '/images/static-qr-code.jpeg',
+        technologies: ['Laravel', 'MySQL', 'Php', 'Html', 'CSS', 'JavaScript'],
+        category: 'Laravel',
+        liveUrl: 'https://static-qr-code.com/',
     },
     {
-        title: 'Fitness Tracking Mobile App',
-        description: 'Cross-platform mobile app for fitness tracking with workout plans, progress monitoring, and social features.',
-        image: 'https://images.pexels.com/photos/4162449/pexels-photo-4162449.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-        technologies: ['React Native', 'Firebase', 'Redux', 'Chart.js'],
-        liveUrl: '#',
-        githubUrl: '#',
-        category: 'Mobile Development'
+        id: 'easyconvertkit',
+        title: 'EasyConvertKit',
+        description: 'A website for online converting files, built with Laravel and Php. You can convert files online like pdf to doc, doc to pdf, etc.',
+        image: '/images/easyconvertkit.jpeg',
+        technologies: ['Laravel', 'MySQL', 'Php', 'Html', 'CSS', 'JavaScript'],
+        category: 'Laravel',
+        liveUrl: 'https://easyconvertkit.com/',
     },
 ];
 
@@ -327,12 +327,6 @@ export default function Home() {
                                         >
                                             <ExternalLink className="w-4 h-4 text-slate-700" />
                                         </a>
-                                        <a
-                                            href={project.githubUrl}
-                                            className="p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors duration-200"
-                                        >
-                                            <Github className="w-4 h-4 text-slate-700" />
-                                        </a>
                                     </div>
                                 </div>
 
@@ -356,10 +350,10 @@ export default function Home() {
                                     </div>
 
                                     <Link
-                                        href="#"
+                                        href={`/projects/${project.id}`}
                                         className="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200"
                                     >
-                                        Learn More
+                                        View More
                                         <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
                                     </Link>
                                 </div>

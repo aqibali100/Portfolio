@@ -124,20 +124,30 @@ const ProjectDetail = () => {
     'easyconvertkit': {
       title: 'EasyConvertKit',
       subtitle: 'A website for online converting files, built with Laravel and Php. You can convert files online like pdf to doc, doc to pdf, etc.',
-      description: 'Static‑QR‑Code offers a suite of entirely free, no‑sign‑up‑required tools for generating static QR codes—codes that embed your data directly without the ability to edit or expire. Each tool supports PNG and SVG downloads, customization (colors, logos, shapes), and instant use.',
-      longDescription: `Static-QR-Code provides a full range of intuitive, browser-based tools for generating static QR codes—no sign-up, no fees, no expiration. Whether you need to share plain text, a URL, contact details, business card info, menus, PDFs, images, Wi-Fi credentials, or even a Facebook profile, there's a dedicated generator built just for that. Each tool offers styling flexibility—like colors, logos, module shapes—and supports high-quality PNG or scalable SVG output. Plus, you can decode existing QR codes with the Scan tool. Everything is designed for immediate use, ideal for educators, businesses, events, restaurants, and professionals looking for efficient, privacy-focused solutions for connecting offline materials to digital content.
-
-      This tool converts plain text (up to about 300 characters) into static QR codes instantly. It supports bulk generation—so if you have 10, 100, or even 1,000 lines of text, it can produce a separate QR for each. You customize colors, logo placement, code size, and download options, choosing between PNG and SVG formats—ideal for both digital and print use. The codes never expire and are generated without signing up.
-
-      Share Wi‑Fi access effortlessly without revealing your password. Just input your network's SSID, select the encryption type (WPA/WPA2/WPA3, WEP, or none), and generate a scannable QR code. Customize its appearance (colors, shapes, logo) and download in PNG or SVG. The resulting code works on both iOS and Android, remains valid indefinitely (until you change the password), and requires no account.
+      description: 'EasyConvertKit.com is an online platform offering a suite of free, browser-based tools designed for converting various types of files. The website provides over 30 different converters, enabling users to quickly and securely transform documents, images, presentations, and spreadsheets between popular formats.',
+      longDescription: `PDF to Word (DOCX): Convert PDF files into editable Word documents without losing formatting, making it ideal for editing contracts, reports, or study materials.
       
-      Create a digital business card by embedding your contact details—name, phone number, email, address, and more—into a QR code. Personalize your code with colors and logos, preview it live, and download in high-resolution PNG or SVG. It’s a sleek, professional tool that works across smartphones and doesn’t require registration.
+      PDF to JPG/PNG: Transform each PDF page into high-quality JPG or PNG images, suitable for sharing, embedding in presentations, or archiving.
       
-      Provide a scannable QR that either takes users to a map with a specified address or allows them to select a location on a map interface. Great for event organizers, real estate agents, or anyone needing easy wayfinding. You can style the code, and download it in PNG or SVG formats.
+      Word to JPG/PNG: Convert Word documents into high-resolution JPG or PNG images, preserving the original layout and formatting.
       
-      Ideal for instantly starting a WhatsApp conversation: encode a number and even a default message into a QR. Upon scanning, the chat window opens immediately—no manual input needed. Customize design elements like logo, color, and shape. This tool remains free, static, and easy to use.
+      Word to PDF: Instantly convert Word documents into universally compatible PDF files, ensuring consistent formatting across all devices.
       
-      All tools are 100% free, require no registrations, and generate truly static QR codes—that store embedded data directly in the image. These codes do not expire, do not track user behavior, and can’t be edited once created. You also get basic but powerful customization and both PNG and SVG download options, making them print-ready and ideal for long-term use.`,
+      PDF Merge, Split, Rotate, Protect: Combine multiple PDFs into one, split a large PDF into smaller files, rotate pages as needed, or protect documents with password encryption for enhanced security.
+      
+      JPG to SVG/WebP/PNG: Convert JPG images into scalable SVG vectors, compressed WebP files, or lossless PNG images, suitable for web use and design projects.
+      
+      PNG to JPG/SVG/WebP: Transform PNG images into JPG for smaller file sizes, SVG for scalability, or WebP for efficient web usage.
+      
+      SVG to JPG/PNG/WebP/PDF: Convert SVG vector graphics into raster formats like JPG or PNG, or into PDF for easy sharing and printing.
+      
+      PPT/PPTX to JPG/PNG: Convert PowerPoint slides into high-resolution JPG or PNG images, preserving the original design and layout.
+      
+      PPTX to PDF: Transform PowerPoint presentations into PDF format, ensuring consistent formatting and easy sharing.
+      
+      XLS/XLSX to JPG/PNG: Convert Excel spreadsheets into high-resolution JPG or PNG images, useful for embedding in reports or presentations.
+      
+      XLS/XLSX to PDF: Change Excel files into PDF documents, preserving the layout and formatting for consistent viewing.`,
       image: '/images/easyconvertkit.jpeg',
       gallery: [
         '/images/easyconvertkit1.jpeg',
@@ -154,30 +164,150 @@ const ProjectDetail = () => {
       status: 'Live',
       year: '2025',
       features: [
-        'You can create unlimited QR codes without creating an account or paying any fees.',
-        'Supports URLs, text, Wi-Fi, vCard/contact info, coupons, images, audio, and more.',
-        'The data is embedded directly into the code, so it never expires and doesn’t rely on servers.',
-        'No tracking or analytics; everything is generated locally in your browser.',
-        'Change colors, add logos, frames, and shapes, and download in PNG or scalable SVG format.',
-        'Can generate many codes at once, and codes work without any internet connection once created.',
+        'Free and Unlimited Access: No account or fees required to use the conversion tools, and you can convert as many files as you need.',
+        'Wide Range of Formats: Supports conversions for documents (PDF, Word, PPTX, Excel), images (JPG, PNG, SVG, WebP), presentations, and more.',
+        'Secure and Private: The entire process happens locally in your browser with no tracking or analytics, ensuring privacy and data security.',
+        'No Expiry: Files are converted instantly, and once you download them, they never expire, allowing easy access at any time. ',
+        'Customization Options: Change the output settings like format, size, and quality to match your requirements.',
+        'Batch Conversion: Ability to convert multiple files simultaneously for increased productivity, with no need for an internet connection once the tool is loaded.',
       ],
       challenges: [
         {
-          title: 'Handling Multiple QR Code Types',
-          description: 'Providing support for various QR code formats like text, URLs, Wi-Fi, vCards, images, and audio while keeping the generation process simple and error-free.',
-          solution: 'Built modular generators using optimized JavaScript libraries and ensured consistent encoding standards for each content type.'
+          title: 'Handling Multiple File Formats',
+          description: 'Supporting a wide variety of file types for conversion, such as PDF, Word, JPG, PNG, PPTX, Excel, and more, while maintaining the quality and integrity of each format.',
+          solution: 'Developed robust, modular conversion tools using optimized JavaScript libraries, ensuring seamless transitions between formats while preserving file structure and content.'
         },
         {
           title: 'Ensuring Privacy and Security',
-          description: 'Users expect QR codes to be generated privately without storing data on servers or tracking activity.',
-          solution: 'All generation is processed locally in the browser, with no data collection, tracking, or server-side storage, ensuring complete privacy.'
+          description: 'Users expect that their files are converted privately without storing any data on servers or tracking their activities.',
+          solution: 'All conversions are processed locally in the user\'s browser, with no data collection or server-side storage, ensuring complete privacy and security for the files.'
         },
         {
           title: 'Performance and Scalability',
-          description: 'Managing fast QR generation, customization, and bulk creation while maintaining responsiveness and reliability.',
-          solution: 'Utilized lightweight code libraries, client-side rendering, SVG generation for scalability, and efficient caching mechanisms for bulk operations.'
+          description: 'Handling multiple simultaneous conversions and ensuring fast processing times, especially for large files, while keeping the interface responsive and efficient.',
+          solution: 'Used lightweight code libraries, client-side rendering, and optimized caching mechanisms to handle bulk conversions and ensure high performance without compromising user experience.',
         }
       ],
+    },
+    'ak-boys-hostel': {
+      title: 'AK Boys Hostel',
+      subtitle: 'A Website for managing hostel rooms, built with MongoDB, Node Js, React Js and Php. You can manage hostel management system online.',
+      description: 'The website appears to be an online portal for the AK Boys Hostel Management System. It offers a digital platform for managing hostel-related activities, including room bookings, fee payments, and other administrative tasks. The site features a login page with options for users to sign in or reset their passwords.',
+      longDescription: `However, the website does not provide detailed information about the hostel's facilities, location, or contact details. For comprehensive information about the AK Boys Hostel, such as accommodation options, amenities, pricing, and location, it is advisable to contact the hostel directly or visit their official social media pages.
+      
+      Room availability is dynamically updated, allowing students to select and book rooms based on their preferences and availability. The system manages room assignments, ensuring efficient utilization and minimizing conflicts. Booking confirmations and reminders are sent to students, streamlining the reservation process.
+      
+      The system maintains records of hostel staff and workers, including their roles, responsibilities, and schedules. This centralized database facilitates efficient management and coordination of hostel operations. Admins can assign tasks, monitor performance, and ensure smooth functioning of hostel services.
+      
+      Salary details for staff and workers are securely stored and managed within the system. Admins can process payments, track salary histories, and generate reports, ensuring timely and accurate compensation. This feature promotes transparency and accountability in financial dealings.
+      
+      Students can report maintenance issues through the system, which are then tracked and assigned to appropriate personnel. This feature ensures timely resolution of problems, maintaining the quality and safety of hostel facilities. Admins can monitor the status of reported issues and ensure prompt action.
+      
+      The system maintains comprehensive records of all activities, including room bookings, maintenance requests, staff assignments, and financial transactions. This historical data supports decision-making, audits, and continuous improvement of hostel operations.
+      
+      In summary, the Ak Boys Hostel Management System leverages the MERN stack to provide a robust, scalable, and efficient platform for managing hostel operations. Its comprehensive features streamline processes, enhance user experience, and ensure effective management of resources.
+      `,
+      image: '/images/ak-boys-hostel.jpeg',
+      gallery: [
+        '/images/ak-boys-hostel1.jpeg',
+        '/images/ak-boys-hostel2.jpeg',
+        '/images/ak-boys-hostel3.jpeg',
+        '/images/ak-boys-hostel4.jpeg',
+      ],
+      technologies: ['MongoDB', 'Node Js', 'React Js', 'Html', 'CSS', 'JavaScript'],
+      category: 'Node Js',
+      stack: 'Node Js',
+      liveUrl: 'https://www.akboyshostel.online/',
+      duration: '2 months',
+      teamSize: '1 developers',
+      status: 'Live',
+      year: '2024',
+      features: [
+        'Efficient Room & Booking Management: Streamlined room booking and real-time updates.',
+        'Comprehensive Customer & Profile Management: Easy registration and profile updates for residents.',
+        'Staff & Worker Management: Manage staff tasks and schedules efficiently.',
+        'Secure Salary Management: Transparent salary processing and report generation.',
+        'Maintenance Tracking: Report and track maintenance issues easily.',
+        'Historical Record Keeping: Maintain records of activities, bookings, and transactions.',
+      ],
+      challenges: [
+        {
+          title: 'Managing Hostel Operations Efficiently',
+          description: 'Coordinating various aspects of hostel management, including room bookings, staff tasks, maintenance, and history records, while ensuring smooth and seamless operations.',
+          solution: 'Developed an integrated platform using the MERN stack, streamlining all hostel management processes in one central system, enabling easy management of rooms, staff, and services.'
+        },
+        {
+          title: 'Ensuring Data Security and Privacy',
+          description: 'With sensitive information like customer details, staff records, and financial transactions, ensuring privacy and security is crucial.',
+          solution: 'Implemented strong encryption and secure data handling practices, ensuring all data remains private and secure, with no third-party tracking or analytics.'
+        },
+        {
+          title: 'Handling Real-Time Data and Performance',
+          description: 'Ensuring the system processes multiple tasks simultaneously (like room bookings, staff management, and maintenance requests) while maintaining a responsive and fast interface.',
+          solution: 'Utilized optimized backend and frontend architectures with real-time data updates, ensuring smooth performance and scalability even under high load.'
+        },
+        {
+          title: 'Customization for Different Hostel Needs',
+          description: 'Accommodating various types of hostel configurations, including different room types, maintenance requirements, and salary management settings.',
+          solution: 'Built highly customizable settings in the admin panel, allowing hostel administrators to adjust room types, salary details, maintenance tracking, and more to fit their specific needs.'
+        }
+      ]
+    },
+    'glow-girls': {
+      title: 'Glow Girls',
+      subtitle: 'A wordpress woocommerce website for selling beauty products, built with Wordpress and Php. You can sell beauty products online.',
+      description: 'GlowGirls.site offers a wide range of women’s apparel and accessories. The apparel section features stylish and comfortable clothing, including soft cami shirts available in black and blue, turn-up sleeve V-neck shirts, summer long shirts, and tank tops. These items are designed to cater to women looking for casual yet fashionable outfits. The accessories section includes trendy eyewear, such as butterfly-shaped sunglasses in light grey and brown, and stylish watches that add a perfect finishing touch to any outfit. The site’s collection is carefully curated to offer products that blend style, comfort, and functionality for every woman.',
+      longDescription: `GlowGirls.site is known for its competitive pricing, making it an affordable option for fashion lovers. The prices are reasonable, with items like the Black Women’s Soft Cami Shirt being priced at ₨ 699, down from the original ₨ 1,398. This offers significant savings for shoppers. Additionally, the site provides attractive discounts, including a 10% off coupon that can be applied to orders over ₨ 2,000 by using the promo code "get10%." This discount makes the shopping experience even more appealing, ensuring that customers can snag trendy items without breaking the bank.
+      
+      GlowGirls.site offers free shipping on all orders over ₨ 2,000, making it convenient for shoppers to get their purchases delivered without additional costs. The site also has a flexible return policy, allowing customers to return products within 15 days of purchase. This generous return window ensures that customers are satisfied with their purchases and provides peace of mind when shopping online. The combination of free shipping and a straightforward return policy reflects the site’s commitment to providing a hassle-free shopping experience.
+      
+      GlowGirls.site is a reliable and user-friendly online fashion retailer catering to women’s apparel and accessories. The site’s offerings are stylish yet affordable, with regular discounts and promotions available to customers. Free shipping on orders over ₨ 2,000 and a generous 15-day return policy ensure that the shopping experience is convenient and risk-free. With a focus on secure transactions and responsive customer support, GlowGirls.site is a great choice for women looking to update their wardrobe with trendy, comfortable clothing and accessories.
+      `,
+      image: '/images/glow-girls.jpeg',
+      gallery: [
+        '/images/glow-girls1.jpeg',
+        '/images/glow-girls2.jpeg',
+        '/images/glow-girls3.jpeg',
+        '/images/glow-girls4.jpeg',
+      ],
+      technologies: ['Wordpress', 'Php', 'Html', 'CSS', 'JavaScript', 'WooCommerce'],
+      category: 'Wordpress',
+      stack: 'Wordpress',
+      liveUrl: 'https://glowgirls.site/',
+      duration: '2 weeks',
+      teamSize: '1 developers',
+      status: 'Live',
+      year: '2024',
+      features: [
+        'Efficient Product & Order Management: Seamless product listing and order processing.',
+        'Customer Account Management: Easy user registration, profile updates, and order tracking.',
+        'Inventory & Stock Control: Real-time inventory updates and stock management.',
+        'Secure Payment Integration: Safe and transparent payment processing with multiple options.',
+        'Discount & Promo Code Management: Create and manage discounts and promotional offers.',
+        'Order History & Tracking: Keep track of previous orders and delivery status for customers.'
+      ],
+      challenges: [
+        {
+          title: 'Managing Product Listings and Orders',
+          description: 'Coordinating the product catalog, handling orders, tracking inventory, and managing customer data, all while ensuring a smooth shopping experience.',
+          solution: 'Implemented an integrated WordPress eCommerce platform, allowing easy management of product listings, order processing, and real-time inventory updates for seamless store operations.'
+        },
+        {
+          title: 'Ensuring Customer Data Security',
+          description: 'With sensitive customer data, including payment details and personal information, ensuring privacy and security is a top priority.',
+          solution: 'Adopted secure payment gateways and strong encryption protocols, safeguarding customer information and ensuring compliance with data protection regulations.'
+        },
+        {
+          title: 'Handling Real-Time Transactions and Performance',
+          description: 'Managing high volumes of transactions, ensuring fast processing times, and delivering a seamless shopping experience during peak traffic times.',
+          solution: 'Optimized the site’s backend and frontend for scalability and real-time updates, ensuring smooth and responsive performance even during high traffic and peak shopping periods.'
+        },
+        {
+          title: 'Customizing Product Displays and Offers',
+          description: 'Adapting the site to showcase various product categories, manage discounts, and provide personalized recommendations to customers.',
+          solution: 'Developed a flexible admin panel, enabling the customization of product displays, promotional offers, and category layouts to meet customer demands and maximize sales.'
+        }
+      ]
     },
   };
 
