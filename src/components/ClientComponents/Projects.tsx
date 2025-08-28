@@ -8,7 +8,22 @@ const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
 
-  const projects = [
+  interface Project {
+    id: string;
+    title: string;
+    shortDescription: string;
+    description: string;
+    image: string;
+    technologies: string[];
+    category: string;
+    stack: string;
+    liveUrl: string;
+    teamSize: string;
+    status: string;
+    featured: boolean;
+  }
+
+  const projects: Project[] = [
     {
       id: 'online-text-tools',
       title: 'OnlineTextTools',
