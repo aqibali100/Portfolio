@@ -6,10 +6,11 @@ import { useParams } from 'next/navigation';
 import Link from 'next/link';
 
 const ProjectDetail = () => {
-    const { id } = useParams();
+      const { id } = useParams() as { id?: string };
 
     const projects = {
         'online-text-tools': {
+            id:'online-text-tools',
             title: 'Online Text Tools',
             subtitle: 'A tools website for online text editing and formatting, built with Laravel and Php. You can edit and format text online.',
             description: 'The <strong>Text Cleaner tool</strong> is designed to instantly remove unwanted formatting from your text—whether it’s hidden HTML tags, inline styles, smart quotes, extra spaces, line breaks, invisible tables, bullet points, or odd font styles—that often sneak in when copying text from PDFs, Word documents, or Google Docs. Simply paste your text, choose your cleaning preferences, and hit “Clean.” In just a moment, it delivers a smooth, plain-text result devoid of glitches. This tool is a major time-saver for writers, editors, designers, and anyone aiming for clean, unformatted content.',
@@ -64,6 +65,7 @@ const ProjectDetail = () => {
             ]
         },
         'static-qr-code': {
+            id:'static-qr-code',
             title: 'Static QR Code',
             subtitle: 'A static QR code generator built with Laravel and Php. You can generate QR codes for various purposes.',
             description: 'Static‑QR‑Code offers a suite of entirely free, no‑sign‑up‑required tools for generating static QR codes—codes that embed your data directly without the ability to edit or expire. Each tool supports PNG and SVG downloads, customization (colors, logos, shapes), and instant use.',
@@ -123,6 +125,7 @@ const ProjectDetail = () => {
         },
         'easyconvertkit': {
             title: 'Easy Convert Kit',
+            id:'easyconvertkit',
             subtitle: 'A website for online converting files, built with Laravel and Php. You can convert files online like pdf to doc, doc to pdf, etc.',
             description: 'EasyConvertKit.com is an online platform offering a suite of free, browser-based tools designed for converting various types of files. The website provides over 30 different converters, enabling users to quickly and securely transform documents, images, presentations, and spreadsheets between popular formats.',
             longDescription: `PDF to Word (DOCX): Convert PDF files into editable Word documents without losing formatting, making it ideal for editing contracts, reports, or study materials.
@@ -190,6 +193,7 @@ const ProjectDetail = () => {
             ],
         },
         'ak-boys-hostel': {
+            id:'ak-boys-hostel',
             title: 'AK Boys Hostel',
             subtitle: 'A Website for managing hostel rooms, built with MongoDB, Node Js, React Js and Php. You can manage hostel management system online.',
             description: 'The website appears to be an online portal for the AK Boys Hostel Management System. It offers a digital platform for managing hostel-related activities, including room bookings, fee payments, and other administrative tasks. The site features a login page with options for users to sign in or reset their passwords.',
@@ -254,6 +258,7 @@ const ProjectDetail = () => {
             ]
         },
         'glow-girls': {
+            id:'glow-girls',
             title: 'Glow Girls',
             subtitle: 'A wordpress woocommerce website for selling beauty products, built with Wordpress and Php. You can sell beauty products online.',
             description: 'GlowGirls.site offers a wide range of women’s apparel and accessories. The apparel section features stylish and comfortable clothing, including soft cami shirts available in black and blue, turn-up sleeve V-neck shirts, summer long shirts, and tank tops. These items are designed to cater to women looking for casual yet fashionable outfits. The accessories section includes trendy eyewear, such as butterfly-shaped sunglasses in light grey and brown, and stylish watches that add a perfect finishing touch to any outfit. The site’s collection is carefully curated to offer products that blend style, comfort, and functionality for every woman.',

@@ -85,15 +85,23 @@ const projectData = [
 ];
 
 // Fetch project based on the project ID (slug)
-export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://codewithaqib.com";
-  const { id } = params;
+    const { id } = await params;
+
+  // Find the project by id
   const project = projectData.find((p) => p.id === id);
+
   const fullUrl = `${baseUrl}/projects/${id}`;
 
+  // If no project found, return "Project Not Found" metadata
   if (!project) {
     return {
-      title: "Project Not Found - CodeWithAqib ",
+      title: "Project Not Found - CodeWithAqib",
       description: "The requested project does not exist. Return to the homepage, explore projects, or contact me for help.",
       openGraph: {
         title: "Project Not Found - CodeWithAqib",
@@ -110,12 +118,11 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     };
   }
 
-
-
+  // Return the metadata for the found project
   return {
     title: project.title,
     description: project.shortDescription,
-    keywords: project.keywords,
+    keywords: project.keywords || [], // Ensure project has keywords defined
     openGraph: {
       title: project.title,
       description: project.shortDescription,
@@ -140,12 +147,15 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   };
 }
 
-export default function Page({ params }: { params: { id: string } }) {
-  const project = projectData.find((p) => p.id === params.id);
+// The Page component will render the project based on the params id
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
 
-  if (!project) {
-    return <div>Project not found</div>;
-  }
-
-  return <SingleProject project={project} />;
+  const project = projectData.find((p) => p.id === id);
+  // You can pass data as props if you want, but your client component reads from useParams, so this is fine
+  return <SingleProject />;
 }

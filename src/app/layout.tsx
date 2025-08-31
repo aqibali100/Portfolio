@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/faviconlogo.png" />
-        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_SITE_URL}/en/`} hreflang="en" />
+        <link rel="alternate" href={`${process.env.NEXT_PUBLIC_SITE_URL}/en/`} hrefLang="en" />
       </head>
       <body className={`${poppins.variable} antialiased`}>
         <Header />
