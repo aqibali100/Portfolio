@@ -25,6 +25,20 @@ const Projects = () => {
 
   const projects: Project[] = [
     {
+      id: 'globalprimeautos',
+      title: 'GlobalPrimeAutos',
+      shortDescription: 'A car dealership website built with Wordpress and Php. It features car listings, search functionality, and contact forms.',
+      description: '',
+      image: '/images/globalprimeautos.png',
+      technologies: ['Html', 'CSS', 'JavaScript', 'Php', 'Wordpress', 'MySQL'],
+      category: 'Wordpress',
+      stack: 'Wordpress',
+      liveUrl: 'https://globalprimeautos.com/',
+      teamSize: '2 developers',
+      status: 'Live',
+      featured: true,
+    },
+    {
       id: 'online-text-tools',
       title: 'OnlineTextTools',
       shortDescription: 'A tools website for online text editing and formatting, built with Laravel and Php. You can edit and format text online.',

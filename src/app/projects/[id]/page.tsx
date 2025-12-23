@@ -3,6 +3,22 @@ import type { Metadata } from "next";
 
 const projectData = [
   {
+    id: 'globalprimeautos',
+    slug: 'globalprimeautos',
+    title: 'GlobalPrimeAutos - CodeWithAqib',
+    shortDescription: 'A car dealership website built with Wordpress and Php. It features car listings, search functionality, and contact forms.',
+    description: '',
+    image: '/images/globalprimeautos.png',
+    technologies: ['Html', 'CSS', 'JavaScript', 'Php', 'Wordpress', 'MySQL'],
+    category: 'Wordpress',
+    stack: 'Wordpress',
+    liveUrl: 'https://globalprimeautos.com/',
+    teamSize: '2 developers',
+    status: 'Live',
+    keywords: ['car dealership', 'wordpress website', 'php website', 'car listings', 'search functionality', 'contact forms', 'car dealership online', 'wordpress car dealership', 'php car dealership', 'car listings online', 'search functionality online', 'contact forms online'],
+    featured: true,
+  },
+  {
     id: 'online-text-tools',
     slug: 'online-text-tools',
     title: 'OnlineTextTools - CodeWithAqib',

@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
+import Particles from './Particles';
 
 const Footer = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -44,7 +45,8 @@ const Footer = () => {
 
     return (
         <footer className="bg-slate-900 text-white relative">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <Particles />
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div className="lg:col-span-2">
                         <div className="mb-6">
@@ -109,7 +111,7 @@ const Footer = () => {
             </div>
 
             <div className="border-t border-slate-800">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 relative z-10">
                     <div className="flex flex-col md:flex-row justify-center items-center">
                         <div className="flex items-center text-slate-400 mb-4 md:mb-0">
                             <span>© {currentYear} CodeWithAqib. All rights reserved.</span>

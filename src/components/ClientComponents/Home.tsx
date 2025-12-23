@@ -42,6 +42,15 @@ const technologies = [
 
 const projects = [
     {
+        id: 'globalprimeautos',
+        title: 'GlobalPrimeAutos',
+        description: 'A car dealership website built with Wordpress and Php. It features car listings, search functionality, and contact forms.',
+        image: '/images/globalprimeautos.png',
+        technologies: ['Html', 'CSS', 'JavaScript', 'Php', 'Wordpress', 'MySQL'],
+        liveUrl: 'https://globalprimeautos.com/',
+        category: 'Wordpress'
+    },
+    {
         id: 'online-text-tools',
         title: 'OnlineTextTools',
         description: 'A tools website for online text editing and formatting, built with Laravel and Php. You can edit and format text online.',
@@ -58,15 +67,6 @@ const projects = [
         technologies: ['Laravel', 'MySQL', 'Php', 'Html', 'CSS', 'JavaScript'],
         category: 'Laravel',
         liveUrl: 'https://static-qr-code.com/',
-    },
-    {
-        id: 'easyconvertkit',
-        title: 'EasyConvertKit',
-        description: 'A website for online converting files, built with Laravel and Php. You can convert files online like pdf to doc, doc to pdf, etc.',
-        image: '/images/easyconvertkit.jpeg',
-        technologies: ['Laravel', 'MySQL', 'Php', 'Html', 'CSS', 'JavaScript'],
-        category: 'Laravel',
-        liveUrl: 'https://easyconvertkit.com/',
     },
 ];
 
