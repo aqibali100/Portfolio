@@ -3,6 +3,22 @@ import type { Metadata } from "next";
 
 const projectData = [
   {
+    id: 'edutrainingcenter',
+    slug: 'edutrainingcenter',
+    title: 'Edu Training Center - CodeWithAqib',
+    shortDescription: 'The website EDU Training Centre belongs to EDU Training Centre Ltd, a UK-based training institute that provides professional courses in the security industry.',
+    description: 'The website EDU Training Centre Ltd is an online platform for a UK-based training institute that specializes in preparing individuals for careers in the private security industry. The site serves as both an informational hub and a course booking system, allowing users to explore available training programs, understand certification requirements, and enroll in courses directly.',
+    image: '/images/edutraining.png',
+    technologies: ['Html', 'CSS', 'JavaScript', 'Next.js', 'Node.js', 'MongoDB', 'Tailwind CSS'],
+    category: 'Next.js',
+    stack: 'Next.js',
+    liveUrl: 'https://www.edutraining.co.uk',
+    teamSize: '2 developers',
+    status: 'Live',
+    keywords: ['edu training center', 'training institute', 'security industry training', 'sia training', 'next.js website', 'node.js website', 'mongodb website'],
+    featured: true,
+  },
+  {
     id: 'globalprimeautos',
     slug: 'globalprimeautos',
     title: 'GlobalPrimeAutos - CodeWithAqib',
@@ -28,43 +44,11 @@ const projectData = [
     technologies: ['Laravel', 'MySQL', 'Php', 'Html', 'CSS', 'JavaScript'],
     category: 'Laravel',
     stack: 'Laravel',
-    liveUrl: 'https://onlinetexttools.net/',
+    liveUrl: 'https://onlinetexttools.io',
     teamSize: '3 developers',
     status: 'Live',
     keywords: ['online text tools', 'text tools', 'online text cleaner', 'online text editor', 'online text formatter', 'online text editor online', 'online text cleaner online', 'online text formatter online'],
     featured: true,
-  },
-  {
-    id: 'static-qr-code',
-    slug: 'static-qr-code',
-    title: 'Static QR Code Generator - CodeWithAqib',
-    shortDescription: 'A static QR code generator built with Laravel and Php. You can generate QR codes for various purposes.',
-    description: '',
-    image: '/images/static-qr-code.jpeg',
-    technologies: ['Laravel', 'MySQL', 'Php', 'Html', 'CSS', 'JavaScript'],
-    category: 'Laravel',
-    stack: 'Laravel',
-    liveUrl: 'https://static-qr-code.com/',
-    teamSize: '3 developers',
-    status: 'Live',
-    keywords: ['static qr code generator', 'qr code generator', 'static qr code', 'qr code', 'static qr code generator online', 'qr code generator online', 'static qr code online', 'qr code online'],
-    featured: true,
-  },
-  {
-    id: 'easyconvertkit',
-    slug: 'easyconvertkit',
-    title: 'Easy Convert Kit - CodeWithAqib',
-    shortDescription: 'A website for online converting files, built with Laravel and Php. You can convert files online like pdf to doc, doc to pdf, etc.',
-    description: '',
-    image: '/images/easyconvertkit.jpeg',
-    technologies: ['Laravel', 'MySQL', 'Php', 'Html', 'CSS', 'JavaScript'],
-    category: 'Laravel',
-    stack: 'Laravel',
-    liveUrl: 'https://easyconvertkit.com/',
-    teamSize: '3 developers',
-    status: 'Live',
-    keywords: ['online file converter', 'file converter', 'online file converter online', 'file converter online', 'pdf to docx', 'docx to pdf', 'pdf to docx online', 'docx to pdf online'],
-    featured: false,
   },
   {
     id: 'ak-boys-hostel',
@@ -76,26 +60,10 @@ const projectData = [
     technologies: ['MongoDB', 'Node Js', 'React Js', 'Html', 'CSS', 'JavaScript'],
     category: 'Node Js',
     stack: 'Node Js',
-    liveUrl: 'https://www.akboyshostel.online/',
+    liveUrl: 'https://www.akboyshostel.store',
     teamSize: '1 developers',
     status: 'Live',
     keywords: ['hostel management system', 'hostel management', 'hostel management system online', 'hostel management online', 'hostel management system online', 'hostel management online'],
-    featured: false,
-  },
-  {
-    id: 'glow-girls',
-    slug: 'glow-girls',
-    title: 'Glow Girls WooCommerce - CodeWithAqib',
-    shortDescription: 'A wordpress woocommerce website for selling beauty products, built with Wordpress and Php. You can sell beauty products online.',
-    description: '',
-    image: '/images/glow-girls.jpeg',
-    technologies: ['Wordpress', 'Php', 'Html', 'CSS', 'JavaScript', 'WooCommerce'],
-    category: 'Wordpress',
-    stack: 'Wordpress',
-    liveUrl: 'https://glowgirls.site/',
-    teamSize: '1 developers',
-    status: 'Live',
-    keywords: ['beauty products', 'beauty products online', 'beauty products online', 'beauty products online'],
     featured: false,
   },
 ];
@@ -107,11 +75,8 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://codewithaqib.com";
-    const { id } = await params;
-
-  // Find the project by id
+  const { id } = await params;
   const project = projectData.find((p) => p.id === id);
-
   const fullUrl = `${baseUrl}/projects/${id}`;
 
   // If no project found, return "Project Not Found" metadata

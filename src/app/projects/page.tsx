@@ -1,4 +1,3 @@
-// app/projects/page.tsx
 import Projects from "@/components/ClientComponents/Projects";
 import { Metadata } from "next";
 
