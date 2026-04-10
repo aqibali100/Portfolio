@@ -247,110 +247,6 @@ Portfolio/
 
 ---
 
-## Customization Guide
-
-### Update Content
-
-**Edit Projects:**
-- File: [src/components/ClientComponents/Home.tsx](src/components/ClientComponents/Home.tsx)
-- Update the `projects` array with your project information
-
-**Edit Skills:**
-- File: [src/components/ClientComponents/Skills.tsx](src/components/ClientComponents/Skills.tsx)
-- Modify skill categories and technologies
-
-**Update Profile:**
-- Edit respective page files in `src/app/`
-- Update metadata and descriptions
-
-### Customize Styling
-
-- **Global Styles:** `src/app/globals.css`
-- **TailwindCSS Config:** `tailwind.config.ts`
-- **Component Styles:** Use TailwindCSS utility classes
-- **Animations:** Configure Framer Motion in components
-
-### Environment Variables
-
-```env
-NEXT_PUBLIC_SITE_URL     # Your website domain
-NEXT_PUBLIC_EMAIL        # Contact email address
-NEXT_PUBLIC_PHONE        # Contact phone number
-```
-
----
-
-## Deployment
-
-### Deploy on Vercel (Recommended)
-
-Vercel is the optimal platform for Next.js applications:
-
-1. **Push code to GitHub**
-   ```bash
-   git push origin main
-   ```
-
-2. **Connect to Vercel**
-   - Visit [vercel.com](https://vercel.com)
-   - Click "New Project"
-   - Select your repository
-   - Click "Deploy"
-
-3. **Auto-deployment**
-   - Vercel automatically detects Next.js
-   - Builds and deploys on every push
-   - Environment variables auto-configured
-
-### Deploy on Netlify
-
-1. Build the project:
-   ```bash
-   npm run build
-   ```
-
-2. Deploy to Netlify:
-   - Connect your Git repository
-   - Set build command: `npm run build`
-   - Set publish directory: `.next`
-
-### Deploy on Other Platforms
-
-Refer to [Next.js Deployment Documentation](https://nextjs.org/docs/app/building-your-application/deploying)
-
----
-
-## Key Dependencies
-
-### Production Dependencies
-```json
-{
-  "next": "^16.1.1",
-  "react": "^19.2.4",
-  "react-dom": "^19.2.4",
-  "tailwindcss": "^4",
-  "framer-motion": "^12.34.0",
-  "lucide-react": "^0.539.0",
-  "@radix-ui/react-slot": "^1.2.3",
-  "class-variance-authority": "^0.7.1",
-  "clsx": "^2.1.1",
-  "tailwind-merge": "^3.3.1"
-}
-```
-
-### Development Dependencies
-```json
-{
-  "typescript": "^6.0.2",
-  "@types/react": "^19",
-  "@types/react-dom": "^19",
-  "@types/node": "^25.5.0",
-  "@tailwindcss/postcss": "^4"
-}
-```
-
----
-
 ## SEO & Performance
 
 **SEO Features**
@@ -371,44 +267,9 @@ Refer to [Next.js Deployment Documentation](https://nextjs.org/docs/app/building
 
 ---
 
-## Troubleshooting
-
-### Issue: Port 3000 already in use
-```bash
-# Use a different port
-npm run dev -- -p 3001
-```
-
-### Issue: Dependencies not installed
-```bash
-# Clear npm cache and reinstall
-rm -rf node_modules package-lock.json
-npm install
-```
-
-### Issue: TypeScript errors
-```bash
-# Rebuild TypeScript
-npx tsc --noEmit
-```
-
----
-
 ## License
 
 This project is open source and available under the **MIT License**. Feel free to use it as a template for your own portfolio.
-
----
-
-## Contributing
-
-Contributions are welcome! If you'd like to improve this portfolio template:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ---
 
@@ -416,21 +277,10 @@ Contributions are welcome! If you'd like to improve this portfolio template:
 
 For questions, issues, or suggestions:
 
-- **Email:** [your-email@example.com](mailto:your-email@example.com)
-- **Website:** [https://codewithaqib.com](https://codewithaqib.com)
-- **Phone:** [your-phone-number](tel:your-phone-number)
+- **Email:** [aqib28000@gmail.com](mailto:aqib28000@gmail.com)
+- **Website:** [https://codewithaqib.vercel.app](https://codewithaqib.vercel.app)
+- **Phone:** [+92 327-8551518](tel:+92 327-8551518)
 - **Contact Form:** Available on the website
-
----
-
-## Future Enhancements
-
-- [ ] Dark/Light theme toggle
-- [ ] Blog section
-- [ ] Newsletter subscription
-- [ ] Analytics integration
-- [ ] Multi-language support
-- [ ] CMS integration
 
 ---
 
@@ -440,6 +290,6 @@ For questions, issues, or suggestions:
 
 **Made with love by CodeWithAqib**
 
-[Website](https://codewithaqib.com) • [GitHub](https://github.com) • [LinkedIn](https://linkedin.com)
+[Website](https://codewithaqib.vercel.app) • [GitHub](https://github.com/aqibali100) • [LinkedIn](https://www.linkedin.com/in/aqib-ali-735633290)
 
 </div>
