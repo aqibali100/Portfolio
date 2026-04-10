@@ -2,6 +2,7 @@ import NotFound from "@/components/ClientComponents/Not-Found";
 import type { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
+  
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://codewithaqib.com";
   const currentPath = "/404";
   const fullUrl = `${baseUrl}${currentPath}`;
