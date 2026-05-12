@@ -91,24 +91,26 @@ export default function Home() {
             <section id="home" className="flex items-center justify-center relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-35 pt-30">
                     <div className="text-center">
-                        <AnimatedSection className="text-center">
-                            <h1 className="text-5xl md:text-7xl font-bold text-white mb-2 leading-tight">
+                        <h1 className="text-5xl md:text-7xl font-bold text-white mb-2 leading-tight">
+                            <AnimatedSection className="text-center">
                                 Hi, I'm{' '}
                                 <span className="text-[#22f2ef]">
                                     Aqib
                                 </span>
-                                <br />
-                                <span className="text-4xl md:text-6xl"> Full Stack Developer</span>
-                            </h1>
-                        </AnimatedSection>
+                            </AnimatedSection>
 
-                        <AnimatedSection>
+                            <AnimatedSection className="text-center" delay={0.1}>
+                                <span className="text-4xl md:text-6xl"> Full Stack Developer</span>
+                            </AnimatedSection>
+                        </h1>
+
+                        <AnimatedSection delay={0.2}>
                             <p className="text md:text-1xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
                                 Web solutions with MERN, NEXT JS, LARAVEL and cloud technologies.
                             </p>
                         </AnimatedSection>
 
-                        <AnimatedSection>
+                        <AnimatedSection delay={0.3}>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Link
                                     href={'/projects'}
@@ -136,7 +138,7 @@ export default function Home() {
                         </h2>
                     </AnimatedSection>
 
-                    <AnimatedSection className="text-center mb-15">
+                    <AnimatedSection className="text-center mb-15" delay={0.1}>
                         <p className="text md:text-1xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
                             Scalable web experiences from concept to launch.
                         </p>
@@ -197,27 +199,31 @@ export default function Home() {
             </section>
 
             {/* Technologies section */}
-            <section className="max-w-7xl py-20 pt-5 overflow-hidden">
+            <section className="py-20 pt-5 overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-                    <div className="text-center">
+                    <div className="text-center md:text-left">
                         <AnimatedSection className="text-center">
                             <h2 className="text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
                                 Technologies <span className="text-[#22f2ef]"> I Master</span>
                             </h2>
                         </AnimatedSection>
 
-                        <AnimatedSection>
+                        <AnimatedSection className="text-center" delay={0.1}>
                             <p className="text md:text-1xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
-                                Leveraging modern tools and frameworks to craft innovative, high-performing solutions.
+                                Leveraging modern tools and frameworks to craft innovative, <br></br> high-performing solutions.
                             </p>
                         </AnimatedSection>
                     </div>
                 </div>
 
-                <CategoryMarquee />
+                <AnimatedSection>
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <CategoryMarquee />
+                    </div>
+                </AnimatedSection>
             </section>
 
-            {/* Projects Section */}
+            {/* Projects section */}
             <section id="projects" className="py-20 pt-5 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center mb-20">
@@ -227,7 +233,7 @@ export default function Home() {
                             </h2>
                         </AnimatedSection>
 
-                        <AnimatedSection>
+                        <AnimatedSection delay={0.1}>
                             <p className="text md:text-1xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
                                 Showcasing my recent work with cutting-edge technologies
                             </p>
@@ -345,7 +351,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Testimonials Section */}
+            {/* Testimonials */}
             <section id="testimonials" className="py-20 pt-5 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center mb-20">
@@ -355,7 +361,7 @@ export default function Home() {
                             </h2>
                         </AnimatedSection>
 
-                        <AnimatedSection>
+                        <AnimatedSection delay={0.1}>
                             <p className="text md:text-1xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
                                 Real feedback from amazing clients and partners
                             </p>
@@ -364,7 +370,7 @@ export default function Home() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                         {testimonials.map((testimonial, index) => (
-                            <AnimatedSection key={index}>
+                            <AnimatedSection key={index} delay={index * 0.2}>
                                 <div
                                     className="group relative h-full overflow-hidden rounded-2xl"
                                 >
@@ -427,24 +433,30 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* call to action section */}
+            {/* CTA Section */}
             <section className="py-20 pt-5 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center">
-                        <AnimatedSection className="text-center">
-                            <h2 className="text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
-                                Ready to Build Something <br></br><span className="text-[#22f2ef]">   Extraordinary Together?</span>
-                            </h2>
-                        </AnimatedSection>
+                        <h2 className="text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
 
-                        <AnimatedSection>
+                            <AnimatedSection>
+                                Ready to Build Something
+                            </AnimatedSection>
+
+                            <AnimatedSection delay={0.1}>
+                                <span className="text-[#22f2ef]">   Extraordinary Together?</span>
+                            </AnimatedSection>
+
+                        </h2>
+
+                        <AnimatedSection delay={0.2}>
                             <p className="text md:text-1xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
                                 Let’s bring your vision to life. I craft digital products that drive growth, inspire users, and deliver results.
                             </p>
                         </AnimatedSection>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                            <AnimatedSection>
+                            <AnimatedSection delay={0.3}>
                                 <div className="text-center">
                                     <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
                                         <Mail className="w-8 h-8 text-white" />
@@ -457,7 +469,7 @@ export default function Home() {
                                 </div>
                             </AnimatedSection>
 
-                            <AnimatedSection>
+                            <AnimatedSection delay={0.4}>
                                 <div className="text-center">
                                     <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4">
                                         <Phone className="w-8 h-8 text-white" />

@@ -94,22 +94,18 @@ const About = () => {
     {
       title: 'Quality First',
       description: 'I believe in writing clean, maintainable code that stands the test of time.',
-      icon: '🎯'
     },
     {
       title: 'Continuous Learning',
       description: 'Technology evolves rapidly, and I stay ahead by constantly learning new skills.',
-      icon: '📚'
     },
     {
       title: 'Client Success',
       description: 'Your success is my success. I\'m committed to delivering solutions that drive results.',
-      icon: '🚀'
     },
     {
       title: 'Innovation',
       description: 'I love exploring new technologies and finding creative solutions to complex problems.',
-      icon: '💡'
     }
   ];
 
@@ -184,13 +180,13 @@ const About = () => {
                 </h1>
               </AnimatedSection>
 
-              <AnimatedSection>
+              <AnimatedSection delay={0.1}>
                 <p className="text md:text-1xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
-                  Full-stack developer focused on performance, accessibility, and clean, maintainable code.
+                  Full-stack developer focused on performance, accessibility, and <br></br> clean, maintainable code.
                 </p>
               </AnimatedSection>
 
-              <AnimatedSection>
+              <AnimatedSection delay={0.2}>
                 <div className="flex flex-wrap gap-4 text-center justify-center">
                   <div className="flex items-center text-white">
                     <MapPin className="w-5 h-5 mr-2 text-[#22f2ef]" />
@@ -214,7 +210,7 @@ const About = () => {
             {achievements.map((achievement, index) => {
               const IconComponent = achievement.icon;
               return (
-                <AnimatedSection key={index}>
+                <AnimatedSection key={index} delay={index * 0.1}>
                   <div className="text-center group">
                     <div className={`w-20 h-20 rounded-2xl border border-[#22f2ef]/50 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                       <IconComponent className="w-10 h-10 text-white" />
@@ -300,13 +296,13 @@ const About = () => {
             <div className="prose prose-lg max-w-none py-10">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
                 <div className="space-y-6">
-                  <AnimatedSection>
+                  <AnimatedSection delay={0.1}>
                     <p className="text-lg text-white leading-relaxed">
                       My journey into the world of technology began during my teenage years when I first discovered the magic of creating something from nothing with just lines of code. What started as curiosity quickly became a passion that has driven my career for over three years.
                     </p>
                   </AnimatedSection>
 
-                  <AnimatedSection>
+                  <AnimatedSection delay={0.2}>
                     <p className="text-lg text-white leading-relaxed">
                       I specialize in full-stack development, with a particular love for creating seamless user experiences that solve real-world problems. My approach combines technical expertise with a deep understanding of business needs, ensuring that every project I work on delivers tangible value.
                     </p>
@@ -314,13 +310,13 @@ const About = () => {
                 </div>
 
                 <div className="space-y-6">
-                  <AnimatedSection>
+                  <AnimatedSection delay={0.3}>
                     <p className="text-lg text-white leading-relaxed">
                       Over the years, I've had the privilege of working with startups, established businesses, and everything in between. Each project has taught me something new and reinforced my belief that great software is built through collaboration, attention to detail, and a genuine desire to help others succeed.
                     </p>
                   </AnimatedSection>
 
-                  <AnimatedSection>
+                  <AnimatedSection delay={0.4}>
                     <p className="text-lg text-white leading-relaxed">
                       When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, mentoring aspiring developers, or enjoying a good cup of coffee while planning the next big project.
                     </p>
@@ -411,7 +407,7 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skills.map((skillGroup, index) => (
-              <AnimatedSection key={index}>
+              <AnimatedSection key={index} delay={index * 0.1}>
                 <div className="border border-[#22f2ef]/50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <h3 className="text-xl font-bold text-white mb-6">{skillGroup.category}</h3>
 
@@ -458,9 +454,8 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {values.map((value, index) => (
-              <AnimatedSection key={index}>
+              <AnimatedSection key={index} delay={index * 0.1}>
                 <div className="flex items-start space-x-6 p-8 rounded-2xl border border-[#22f2ef]/50 hover:shadow-xl transition-shadow duration-300">
-                  <div className="text-4xl">{value.icon}</div>
                   <div>
                     <h3 className="text-xl font-bold text-white mb-3">{value.title}</h3>
                     <p className="text-white leading-relaxed">{value.description}</p>
@@ -482,7 +477,7 @@ const About = () => {
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <AnimatedSection>
+            <AnimatedSection delay={0.1}>
               <div>
                 <div className="space-y-6">
                   <div className="border border-[#22f2ef]/50 p-6 rounded-xl">
@@ -494,7 +489,7 @@ const About = () => {
               </div>
             </AnimatedSection>
 
-            <AnimatedSection>
+            <AnimatedSection delay={0.2}>
               <div>
                 <div className="space-y-6">
                   <div className="border border-[#22f2ef]/50 p-6 rounded-xl">
@@ -543,14 +538,14 @@ const About = () => {
             </h2>
           </AnimatedSection>
 
-          <AnimatedSection>
+          <AnimatedSection delay={0.1}>
             <p className="text md:text-1xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
               Have a project in mind? I’m accepting new work and collaborations—let’s craft
               something users love and businesses trust.
             </p>
           </AnimatedSection>
-          
-          <AnimatedSection>
+
+          <AnimatedSection delay={0.2}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href={'/contact'}
