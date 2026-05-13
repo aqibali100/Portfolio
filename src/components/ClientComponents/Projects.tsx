@@ -26,6 +26,34 @@ const Projects = () => {
 
   const projects: Project[] = [
     {
+      id: 'neurochatai',
+      title: 'NeuroChat-AI',
+      shortDescription: 'NeuroChat is an AI-powered chat platform designed to help users with coding, writing, analysis, problem-solving, and creative brainstorming.',
+      description: '',
+      image: '/images/NeuroChat.png',
+      technologies: ['Html', 'CSS', 'JavaScript', 'Next.js', 'Node.js', 'MongoDB', 'Tailwind CSS', 'OpenAI API', 'Frammer Motion'],
+      liveUrl: 'https://neurochat-ai.vercel.app',
+      category: 'Next.js, Node Js',
+      stack: 'Next.js, Node.js',
+      teamSize: '1 developer',
+      status: 'Live',
+      featured: true,
+    },
+    {
+      id: 'linkedinsaver',
+      title: 'LinkedinSaver',
+      shortDescription: 'LinkedinSaver is a free LinkedIn media downloader that helps users save public LinkedIn videos, images, carousels, and media posts for offline viewing.',
+      description: '',
+      image: '/images/linkedinsaver.png',
+      technologies: ['Html', 'CSS', 'JavaScript', 'Next.js', 'Node.js', 'Tailwind CSS', 'API Integration', 'Frammer Motion'],
+      liveUrl: 'https://linkedin-saver-site.vercel.app',
+      category: 'Next.js, Node Js',
+      stack: 'Next.js, Node.js',
+      teamSize: '1 developer',
+      status: 'Live',
+      featured: false,
+    },
+    {
       id: 'edutrainingcenter',
       title: 'Edu Training Center',
       shortDescription: 'The website EDU Training Centre belongs to EDU Training Centre Ltd, a UK-based training institute that provides professional courses in the security industry.',
@@ -51,7 +79,7 @@ const Projects = () => {
       liveUrl: 'https://globalprimeautos.com/',
       teamSize: '2 developers',
       status: 'Live',
-      featured: true,
+      featured: false,
     },
     {
       id: 'online-text-tools',
@@ -65,7 +93,7 @@ const Projects = () => {
       liveUrl: 'https://onlinetexttools.io',
       teamSize: '3 developers',
       status: 'Live',
-      featured: true,
+      featured: false,
     },
     {
       id: 'ak-boys-hostel',
@@ -81,15 +109,45 @@ const Projects = () => {
       status: 'Live',
       featured: false,
     },
+    {
+      id: 'buyurduthemes',
+      title: 'Buy Urdu Themes',
+      shortDescription: 'Buy Urdu Themes is an online marketplace for Urdu and English website themes, templates, logos, brochures, menus, business cards, and creative design assets.',
+      description: '',
+      image: '/images/buyurdutheme.png',
+      technologies: ['Html', 'CSS', 'JavaScript', 'WordPress', 'WooCommerce', 'Elementor', 'PHP', 'MySQL'],
+      category: 'WordPress',
+      stack: 'WordPress',
+      liveUrl: 'https://buyurduthemes.com',
+      teamSize: '1 developer',
+      status: 'Live',
+      featured: false,
+    },
   ];
 
   const categories = ['all', 'Laravel', 'Next.js', 'React', 'Node Js', 'Wordpress'];
 
+  const normalize = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+  const tagsFor = (project: Project) => {
+    const parts: string[] = [];
+    if (project.category) parts.push(...project.category.split(',').map(p => p.trim()));
+    if (project.stack) parts.push(...project.stack.split(',').map(p => p.trim()));
+    if (project.technologies) parts.push(...project.technologies.map(t => t.trim()));
+    return parts.map(normalize);
+  };
+
   const filteredProjects = projects.filter(project => {
-    const matchesCategory = activeFilter === 'all' || project.category === activeFilter;
+    if (activeFilter !== 'all') {
+      const activeNorm = normalize(activeFilter);
+      const tags = tagsFor(project);
+      if (!tags.includes(activeNorm)) return false;
+    }
+
     const matchesSearch = project.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       project.technologies.some(tech => tech.toLowerCase().includes(searchTerm.toLowerCase()));
-    return matchesCategory && matchesSearch;
+
+    return matchesSearch;
   });
 
   const featuredProjects = projects.filter(project => project.featured);
@@ -109,7 +167,7 @@ const Projects = () => {
                 </span>
               </h1>
             </AnimatedSection>
-            
+
             <AnimatedSection>
               <p className="text md:text-1xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
                 Showcasing my best work with MERN, Next.js, and Laravel
@@ -377,7 +435,7 @@ const Projects = () => {
               Like What You <span className="text-[#22f2ef]">See?</span>
             </h2>
           </AnimatedSection>
-          
+
           <AnimatedSection>
             <p className="text md:text-1xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
               I'm always excited to work on new projects and bring innovative ideas to life.

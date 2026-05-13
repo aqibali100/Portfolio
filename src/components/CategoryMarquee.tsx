@@ -24,7 +24,7 @@ function MarqueeRow({ items, reverse = false, speed = 40 }: MarqueeRowProps) {
                 aria-label="Scrolling categories"
             >
                 {loopItems.map((text, idx) => (
-                    <div
+                    <div key={idx}
                         className="flex-shrink-0 px-6 py-3 rounded-full border border-[#22f2ef]/50 text-white font-bold hover:border-[#22f2ef] group hover:border-[#22f2ef] hover:bg-[#22f2ef]/10 transition-all duration-300 hover:shadow-lg hover:shadow-[#22f2ef]/20"
                     >
                         <span

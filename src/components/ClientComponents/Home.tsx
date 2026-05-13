@@ -26,6 +26,24 @@ const services = [
 
 const projects = [
     {
+        id: 'neurochatai',
+        title: 'NeuroChat-AI',
+        description: 'NeuroChat is an AI-powered chat platform designed to help users with coding, writing, analysis, problem-solving, and creative brainstorming.',
+        image: '/images/NeuroChat.png',
+        technologies: ['Html', 'CSS', 'JavaScript', 'Next.js', 'Node.js', 'MongoDB', 'Tailwind CSS', 'OpenAI API', 'Frammer Motion'],
+        liveUrl: 'https://neurochat-ai.vercel.app',
+        category: 'Next.js'
+    },
+    {
+        id: 'linkedinsaver',
+        title: 'LinkedinSaver',
+        description: 'LinkedinSaver is a free LinkedIn media downloader web application that helps users download public LinkedIn videos, images, carousels, and media posts for offline viewing by simply pasting a LinkedIn post URL.',
+        image: '/images/linkedinsaver.png',
+        technologies: ['Html', 'CSS', 'JavaScript', 'Next.js', 'Node.js', 'Tailwind CSS', 'API Integration'],
+        liveUrl: 'https://linkedin-saver-site.vercel.app',
+        category: 'Next.js'
+    },
+    {
         id: 'edutrainingcenter',
         title: 'Edu Training Center',
         description: 'The website EDU Training Centre belongs to EDU Training Centre Ltd, a UK-based training institute that provides professional courses in the security industry.',
@@ -33,24 +51,6 @@ const projects = [
         technologies: ['Html', 'CSS', 'JavaScript', 'Next.js', 'Node.js', 'MongoDB', 'Tailwind CSS'],
         liveUrl: 'https://www.edutraining.co.uk',
         category: 'Next.js'
-    },
-    {
-        id: 'globalprimeautos',
-        title: 'Global Prime Autos',
-        description: 'A car dealership website built with Wordpress and Php. It features car listings, search functionality, and contact forms.',
-        image: '/images/globalprimeautos.png',
-        technologies: ['Html', 'CSS', 'JavaScript', 'Php', 'Wordpress', 'MySQL'],
-        liveUrl: 'https://globalprimeautos.com',
-        category: 'Wordpress'
-    },
-    {
-        id: 'online-text-tools',
-        title: 'Online Text Tools',
-        description: 'A tools website for online text editing and formatting, built with Laravel and Php. You can edit and format text online.',
-        image: '/images/OnlineTextTools.jpeg',
-        technologies: ['Laravel', 'MySQL', 'Php', 'Html', 'CSS', 'JavaScript'],
-        liveUrl: 'https://onlinetexttools.io',
-        category: 'Laravel'
     },
 ];
 

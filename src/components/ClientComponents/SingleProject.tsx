@@ -10,6 +10,147 @@ const ProjectDetail = () => {
     const { id } = useParams() as { id?: string };
 
     const projects = {
+        'neurochatai': {
+            id: 'neurochatai',
+            title: 'NeuroChat AI',
+            subtitle: 'NeuroChat AI is an AI-powered chatbot web application that helps users with coding, writing, analysis, problem solving, and creative brainstorming.',
+            description: 'NeuroChat AI is a modern AI chat assistant platform designed to provide users with intelligent responses for everyday productivity tasks. The website allows users to ask questions, generate content ideas, debug code, analyze problems, and brainstorm creative solutions through a clean and simple chat interface.',
+            longDescription: `NeuroChat AI is an AI-powered chatbot web application built to make artificial intelligence more accessible, useful, and easy to interact with. The platform provides a chat-based interface where users can ask questions and receive AI-generated responses for different types of tasks, including coding support, content writing, problem analysis, general conversation, and idea generation.
+
+At its core, NeuroChat AI focuses on productivity and assistance. Users can use the platform to write and improve content, generate creative ideas, understand technical concepts, solve problems, and get help with programming-related tasks. The homepage clearly highlights multiple use cases such as writing and debugging code, content creation, analysis, and brainstorming, making the platform suitable for students, developers, writers, professionals, and general users.
+
+The application includes a simple onboarding flow with Google sign-in, allowing users to access their chats and manage their usage. It also offers a pricing structure with both free and premium plans. The free plan provides basic access with limited daily messages, while the premium plan includes unlimited messages, access to a newer AI model, priority response speed, unlimited chat history, advanced code generation, file and image uploads, PDF/DOC analysis, AI image generation, early access to new features, and priority support.
+
+From a user experience perspective, the website is designed to be minimal, responsive, and easy to navigate. Users can start a new chat quickly, view pricing options, sign in with Google, and interact with the AI assistant without unnecessary complexity. The clean interface helps users focus on their questions and responses, while the feature structure makes the product scalable for both casual users and power users.
+
+Overall, NeuroChat AI serves as a multipurpose AI assistant platform that combines conversational AI with productivity-focused tools. It is designed to support learning, creativity, technical problem solving, and digital workflow automation through a simple and user-friendly web experience.`,
+            image: '/images/NeuroChat.png',
+            gallery: [
+                '/images/NeuroChat1.png',
+                '/images/NeuroChat2.png',
+                '/images/NeuroChat3.png',
+                '/images/NeuroChat4.png',
+            ],
+            technologies: ['Html', 'CSS', 'JavaScript', 'Next.js', 'Node.js', 'MongoDB', 'Tailwind CSS', 'AI Integration', 'Google Authentication'],
+            category: 'Next.js, Node Js',
+            stack: 'Next.js, Node.js',
+            liveUrl: 'https://neurochat-ai.vercel.app',
+            duration: '1 Month',
+            teamSize: '1 developers',
+            status: 'Live',
+            year: '2026',
+            features: [
+                'AI-powered chat interface for asking questions and receiving intelligent responses.',
+                'Support for multiple use cases including coding, writing, analysis, conversation, and brainstorming.',
+                'Code assistance features to help users write, understand, and debug code.',
+                'Content writing support for generating ideas, improving text, and creating written material.',
+                'Problem-solving and analytical assistance for users who need structured explanations or solutions.',
+                'Creative brainstorming tools for generating ideas, concepts, and project suggestions.',
+                'Google sign-in functionality for secure and simple user authentication.',
+                'Chat history support, allowing users to view and continue previous conversations.',
+                'Free plan with limited daily messages for basic users.',
+                'Premium plan with unlimited messages, priority speed, advanced code generation, file uploads, PDF/DOC analysis, and AI image generation.',
+                'Clean, responsive, and user-friendly interface accessible across desktop, tablet, and mobile devices.',
+                'Pricing page with clear comparison between free and premium plans.',
+                'Scalable structure for adding new AI features and advanced productivity tools in the future.',
+            ],
+            challenges: [
+                {
+                    title: 'Creating a Simple and Useful AI Chat Experience',
+                    description: 'The main challenge was to design an AI chat interface that feels easy to use while still supporting different types of tasks such as coding, writing, analysis, and brainstorming.',
+                    solution: 'Built a clean and minimal chat interface with clear prompts, simple navigation, and categorized use cases so users can quickly understand what the AI assistant can help with.'
+                },
+                {
+                    title: 'Managing Free and Premium Feature Access',
+                    description: 'The platform needed a pricing structure that clearly separates basic free usage from advanced premium functionality such as unlimited messages, advanced code generation, uploads, and document analysis.',
+                    solution: 'Designed a structured pricing page with clear plan comparison, feature separation, and upgrade-focused messaging to help users understand the value of premium access.'
+                },
+                {
+                    title: 'Implementing Secure User Authentication',
+                    description: 'Users need a reliable way to sign in and access their chats, while keeping the onboarding process simple and beginner-friendly.',
+                    solution: 'Integrated Google authentication to provide a fast and familiar sign-in experience, reducing friction and allowing users to access their chat history easily.'
+                },
+                {
+                    title: 'Building a Scalable AI Product Structure',
+                    description: 'The platform required a flexible structure that could support future features such as file uploads, image generation, PDF/DOC analysis, and improved AI models.',
+                    solution: 'Organized the application with a scalable architecture, making it easier to expand features, manage plans, and introduce new AI-powered tools over time.'
+                }
+            ]
+        },
+        'linkedinsaver': {
+            id: 'linkedinsaver',
+            title: 'LinkedinSaver',
+            subtitle: 'LinkedinSaver is a free LinkedIn video downloader that allows users to save LinkedIn videos and media content for offline viewing without registration.',
+            description: 'LinkedinSaver is a fast and user-friendly web application designed to help professionals download LinkedIn videos and media content by simply pasting a LinkedIn post URL. The platform supports public LinkedIn videos, images, carousels, and other media posts, making it useful for learning, research, training, and content archiving.',
+            longDescription: `LinkedinSaver is a free LinkedIn content downloader web application built for professionals, students, researchers, marketers, and content creators who want to save valuable LinkedIn media for offline access. The platform allows users to paste a LinkedIn post URL and download available media content such as videos, images, and carousels directly through the browser.
+
+The main purpose of the website is to make professional content more accessible and easier to preserve. LinkedIn is widely used for sharing business insights, tutorials, case studies, training videos, product demos, and thought leadership content. However, this content can sometimes become difficult to access later if posts are deleted, accounts become private, or internet connectivity is unavailable. LinkedinSaver solves this problem by allowing users to save useful LinkedIn media content for future reference.
+
+The downloading process is designed to be simple and beginner-friendly. Users only need to open a LinkedIn post, copy the post URL using the three-dot menu, paste the link into the downloader input field, and click the fetch/download button. The platform then processes the link and provides available download options. According to the website, it supports content downloads in different quality options such as HD, SD, or compressed quality depending on the available source media.
+
+From a user experience perspective, LinkedinSaver focuses on speed, privacy, and simplicity. The website clearly highlights that no account registration is required, no software installation is needed, and users can access the downloader directly from desktop, tablet, or mobile devices. The platform also presents itself as secure and private, stating that it does not store user data or downloaded files.
+
+The website is also useful for professional workflows. Users can save training videos, tutorials, industry insights, competitor content, company announcements, and thought leadership videos. This makes the platform helpful for learning and development teams, marketers, students, business researchers, and professionals who want to build a personal knowledge library.
+
+In addition to the downloader tool, the website includes supporting pages such as About Us, Blogs, Contact, Privacy Policy, and Terms and Conditions. The blog section is designed to provide articles related to LinkedIn content strategy, video marketing, personal branding, and professional social media growth. Overall, LinkedinSaver is a practical utility platform focused on helping users save and organize valuable LinkedIn media content quickly and easily.`,
+            image: '/images/linkedinsaver.png',
+            gallery: [
+                '/images/linkedinsaver1.png',
+                '/images/linkedinsaver2.png',
+                '/images/linkedinsaver3.png',
+                '/images/linkedinsaver4.png',
+            ],
+            technologies: ['Html', 'CSS', 'JavaScript', 'Next.js', 'Node.js', 'Tailwind CSS', 'API Integration'],
+            category: 'Next.js, Node Js',
+            stack: 'Next.js, Node.js',
+            liveUrl: 'https://linkedin-saver-site.vercel.app',
+            duration: '1 Month',
+            teamSize: '1 developers',
+            status: 'Live',
+            year: '2026',
+            features: [
+                'Free LinkedIn video downloader with no registration required.',
+                'Allows users to paste a LinkedIn post URL and fetch downloadable media content.',
+                'Supports LinkedIn videos, images, carousels, and media-based public posts.',
+                'Simple three-step process: copy LinkedIn URL, paste into downloader, and download content.',
+                'Supports multiple quality options such as HD, SD, or compressed formats depending on source availability.',
+                'Works directly in the browser without requiring any software installation.',
+                'Responsive design accessible on desktop, tablet, and mobile devices.',
+                'Privacy-focused experience with messaging around not storing user data or downloaded files.',
+                'Useful for saving training videos, tutorials, industry insights, and professional learning content.',
+                'Helpful for business research, competitor analysis, internal training materials, and content archiving.',
+                'Includes supporting pages such as About Us, Blogs, Contact, Privacy Policy, and Terms and Conditions.',
+                'Blog section for LinkedIn content strategy, video marketing, personal branding, and professional social media tips.',
+                'Contact form for general inquiries, technical support, feature requests, bug reports, and partnerships.',
+            ],
+            challenges: [
+                {
+                    title: 'Creating a Simple LinkedIn Downloading Workflow',
+                    description: 'Users needed a fast and easy way to download LinkedIn media without installing software or creating an account.',
+                    solution: 'Designed a simple three-step workflow where users copy a LinkedIn post URL, paste it into the downloader, and download the available media directly from the browser.'
+                },
+                {
+                    title: 'Supporting Different Types of LinkedIn Media',
+                    description: 'LinkedIn posts may contain different media formats such as videos, images, and carousels, making it important to support multiple content types.',
+                    solution: 'Built the downloader flow to support public LinkedIn videos, images, carousels, and other media-based posts with a flexible fetch-and-download process.'
+                },
+                {
+                    title: 'Building User Trust Around Privacy and Security',
+                    description: 'Users may be concerned about whether their LinkedIn URLs, downloaded files, or personal data are stored or tracked.',
+                    solution: 'Highlighted privacy-focused messaging across the website, including no registration, no data storage, secure processing, and browser-based downloading.'
+                },
+                {
+                    title: 'Making the Platform Accessible Across Devices',
+                    description: 'Professionals may need to download or save LinkedIn content from different devices, including mobile phones, tablets, and desktop computers.',
+                    solution: 'Created a responsive and mobile-friendly interface that works smoothly across screen sizes and allows users to access the downloader from any modern browser.'
+                },
+                {
+                    title: 'Explaining Legal and Responsible Usage',
+                    description: 'Downloading social media content can raise copyright and redistribution concerns, so the platform needed clear user guidance.',
+                    solution: 'Added FAQ content that encourages users to download content for personal/offline use and respect content creators’ copyright before redistributing downloaded material.'
+                }
+            ]
+        },
         'edutrainingcenter': {
             id: 'edutrainingcenter',
             title: 'Edu Training Center',
@@ -237,6 +378,79 @@ Overall, Global Prime Autos aims to bridge the gap between global vehicle suppli
                     title: 'Customization for Different Hostel Needs',
                     description: 'Accommodating various types of hostel configurations, including different room types, maintenance requirements, and salary management settings.',
                     solution: 'Built highly customizable settings in the admin panel, allowing hostel administrators to adjust room types, salary details, maintenance tracking, and more to fit their specific needs.'
+                }
+            ]
+        },
+        'buyurduthemes': {
+            id: 'buyurduthemes',
+            title: 'Buy Urdu Themes',
+            subtitle: 'Buy Urdu Themes is an online marketplace for Urdu and English website themes, templates, logos, brochures, menus, and creative design assets.',
+            description: 'Buy Urdu Themes is a creative digital marketplace designed for businesses, bloggers, designers, marketers, and Urdu content creators. The platform provides premium and free website themes, templates, logos, brochures, business cards, menus, vectors, mockups, illustrations, and other branding resources to help users build a professional digital presence.',
+            longDescription: `Buy Urdu Themes is an online creative marketplace built to provide ready-made digital design assets for Urdu and English users. The platform focuses on helping businesses, bloggers, designers, marketers, and content creators access professional website themes, templates, logos, brochures, menus, business cards, vectors, mockups, illustrations, and other branding materials from one place.
+
+The main purpose of the website is to make high-quality Urdu-focused digital designs easily available for users who want to create a professional online identity. Many businesses and content creators need designs that support Urdu language, cultural style, and local branding needs. Buy Urdu Themes solves this problem by offering customizable themes and creative assets that can be used for websites, branding, marketing campaigns, restaurants, business profiles, personal blogs, and online stores.
+
+The platform works like an e-commerce store where users can explore product categories, view individual product details, add items to cart, add products to wishlist, and proceed to checkout. Products include website templates, Urdu themes, restaurant menu designs, brochure designs, business card designs, branding logos, mockups, illustrations, photos, vectors, and other digital resources. Some products are available for free, while others are listed as premium paid products.
+
+From a user experience perspective, the website is structured to be simple and shopping-focused. Users can browse products, search for designs, explore categories, check prices, add products to cart, and download or purchase digital assets. The website also includes account-related options such as My Account, My Wishlist, My Cart, Sign In, and Checkout, making it suitable for repeat customers and users who want to save products for later.
+
+The About Us section explains that Buy Urdu Themes is focused on premium, beautifully designed Urdu themes for Urdu content creators, businesses, bloggers, and users who want to showcase the beauty of the Urdu language on their websites. The platform highlights easy customization, responsive design, user-friendly navigation, and customer support as important values.
+
+Overall, Buy Urdu Themes is a practical e-commerce platform for digital products and creative assets. It combines Urdu-focused design resources with online shopping features, helping users quickly find, purchase, and download professional design materials for websites, branding, marketing, and content creation.`,
+            image: '/images/buyurdutheme.png',
+            gallery: [
+                '/images/buyurdutheme1.png',
+                '/images/buyurdutheme2.png',
+                '/images/buyurdutheme3.png',
+                '/images/buyurdutheme4.png',
+            ],
+            technologies: ['Html', 'CSS', 'JavaScript', 'WordPress', 'WooCommerce', 'Elementor', 'PHP', 'MySQL'],
+            category: 'WordPress',
+            stack: 'WordPress',
+            liveUrl: 'https://buyurduthemes.com',
+            duration: '1 Month',
+            teamSize: '1 developer',
+            status: 'Live',
+            year: '2025',
+            features: [
+                'Online marketplace for Urdu and English website themes, templates, and creative design assets.',
+                'Product categories for website templates, branding logos, brochures, cards, vectors, mockups, illustrations, and collections.',
+                'E-commerce functionality with product listings, product detail pages, cart, wishlist, account, sign-in, and checkout options.',
+                'Free and premium digital products available for download or purchase.',
+                'Customizable Urdu-focused themes designed for bloggers, businesses, content creators, and online stores.',
+                'Design assets for business branding, marketing materials, restaurant menus, brochures, and professional identity.',
+                'Search and category-based browsing to help users quickly find relevant design products.',
+                'Wishlist functionality so users can save products for later.',
+                'Contact page with inquiry form for support, questions, and business communication.',
+                'Blog section for content related to design, themes, branding, and digital resources.',
+                'Responsive design accessible on desktop, tablet, and mobile devices.',
+                'User-friendly shopping experience for browsing, selecting, and purchasing digital assets.',
+            ],
+            challenges: [
+                {
+                    title: 'Creating a Marketplace for Digital Design Products',
+                    description: 'The platform needed to display different types of digital products such as themes, logos, brochures, menus, mockups, and website templates in a structured and user-friendly way.',
+                    solution: 'Organized the website with clear product categories, product listing pages, product detail pages, pricing, cart, wishlist, and checkout functionality to create a smooth shopping experience.'
+                },
+                {
+                    title: 'Supporting Urdu-Focused Design Needs',
+                    description: 'Many users need website themes and branding assets that support Urdu language, cultural style, and local business presentation.',
+                    solution: 'Focused the platform around Urdu and English creative assets, customizable themes, and design products suitable for Urdu content creators, bloggers, businesses, and marketers.'
+                },
+                {
+                    title: 'Building a Simple E-Commerce User Flow',
+                    description: 'Users should be able to browse products, save items, add products to cart, and complete checkout without confusion.',
+                    solution: 'Implemented a familiar e-commerce structure with search, categories, product cards, wishlist, cart, account pages, and checkout options.'
+                },
+                {
+                    title: 'Balancing Free and Premium Product Listings',
+                    description: 'The website includes both free and paid products, so the product presentation needed to clearly show pricing and availability.',
+                    solution: 'Designed product listings with visible prices, sale labels, download options, add-to-cart buttons, and product categories to make the difference between free and premium items clear.'
+                },
+                {
+                    title: 'Making the Platform Useful for Multiple Audiences',
+                    description: 'The website serves different user types including bloggers, businesses, designers, marketers, restaurant owners, and content creators.',
+                    solution: 'Added a wide range of creative assets such as website templates, logos, brochures, business cards, restaurant menus, vectors, mockups, and illustrations to support multiple use cases.'
                 }
             ]
         },
